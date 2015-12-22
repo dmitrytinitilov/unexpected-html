@@ -5,7 +5,7 @@
 * [Строчные и блочные элементы](02_inline_and_block_elements.md)
 * [Отступы](03_margins_and_paddings.md)
 * [Резиновая верстка](04_fluid_design.md)
-* [Способы задания цвета](05_css_colors.md)
+* [Цвета и картинки](05_colors_and_images.md)
 * [Свойства фона](06_background.md)
 * [Приклеивание футера](07_sticky_footer.md)
 * [Свойства текста](08_text_properties.md)
