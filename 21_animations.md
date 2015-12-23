@@ -38,3 +38,32 @@ div {
 animation-name: example;
 animation-duration: 4s;  //продолжительность
 animation-delay: 2s;  //задержка
+
+Количество повторений
+animation-iteration-count: infinite;  //в данном случае бесконечно
+animation-direction: alternate;
+animation-timing-function: linear;
+
+Мультианимации
+-webkit-animation: shrink 2s ease-out, pulsate 4s 2s infinite ease-in-out;
+
+div {
+    animation: example 5s linear 2s infinite alternate;
+}
+
+
+Примеры анимаций
+
+http://www.creativebloq.com/css3/animation-with-css3-712437
+
+http://www.hongkiat.com/blog/creative-css-animations/
+
+
+
+
+
+
+
+
+
+
