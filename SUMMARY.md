@@ -23,7 +23,7 @@
 * [Адаптивная верстка](20_adaptive_design.md)
 * [Анимации](21_animations.md)
 * [Необходимо больше CSS-селекторов](22_we_need_more_cssselectors.md)
-* [До и после. Селекторы :before :after](23_before_after.md)
+* [До и после: cелекторы :before :after](23_before_after.md)
 * [iframe и гиперссылки](iframe_and_hyperlinks.md)
 * [Формы](forms.md)
 * [Немного о SEO](a few_words_about_seo.md)
