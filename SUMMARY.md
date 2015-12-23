@@ -1,4 +1,4 @@
-# Оглавление
+# Summary
 
 * [Введение](README.md)
 * [Старт](01_start.md)
@@ -22,7 +22,7 @@
 * [Наложение объектов](19_objects_overlap.md)
 * [Адаптивная верстка](20_adaptive_design.md)
 * [Анимации](21_animations.md)
-* [Необходимо больше CSS-селекторов](22_we_need_more_CSS_selectors.md)
+* [Необходимо больше CSS-селекторов](22_we_need_more_cssselectors.md)
 * [До и после. Селекторы :before :after](23_before_after.md)
 * [iframe и гиперссылки](iframe_and_hyperlinks.md)
 * [Формы](forms.md)
