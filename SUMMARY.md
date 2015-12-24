@@ -4,7 +4,7 @@
 * [Старт](01_start.md)
 * [Строчные и блочные элементы](02_inline_and_block_elements.md)
 * [Отступы](03_margins_and_paddings.md)
-* [Резиновая верстка](04_fluid_design.md)
+* [Фиксированная и резиновая верстки](04_fixed_and_fluid_designs.md)
 * [Цвета и картинки](05_colors_and_images.md)
 * [Свойства фона](06_background.md)
 * [Приклеивание футера](07_sticky_footer.md)
