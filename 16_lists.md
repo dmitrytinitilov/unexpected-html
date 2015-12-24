@@ -1,19 +1,39 @@
 # Списки
 
+
+**Ненумерованный список**
+
 ```html
 <ul>
    <li>Coffee</li>
    <li>Tea</li>
    <li>Milk</li>
 </ul>
+```
+<ul>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
+
+**Нумерованный список**
+
+```html
+<ol>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ol>
+```
 
 <ol>
    <li>Coffee</li>
    <li>Tea</li>
    <li>Milk</li>
-</ol>```
+</ol>
 
-Список определений
+**Список определений**
+
 ```html
 <dl>
   <dt>Coffee</dt>
@@ -33,4 +53,7 @@ list-style-type:none;
 ![Модифицированный список](pics/16_lists/list_items.gif)
 
  2) Сделать, чтобы при наведении на элемент, из него выпадало меню
+ 
  3) Сделать многоуровневое выпадающее меню
+ 
+ ![Выпадающее меню](pics/16_lists/multi_lists.gif)
