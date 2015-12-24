@@ -92,7 +92,7 @@ outline – граница выделения
 4)  Сделать вот такой вот макет
 
 
-![Блоки змейкой](pics/03_margin_and_paddings/maket.gif)
+![Макет с хедером и футером](pics/03_margin_and_paddings/maket.gif)
 
 
 
