@@ -16,9 +16,9 @@ padding слева равен 100px
 ```css
 padding: 25px 50px 75px;
 ```
-top padding is 25px
-right and left paddings are 50px
-bottom padding is 75px
+верхний padding равен 25px
+padding'и справа и слева равны 50px
+нижний padding равен 75px
 
 ```css
 padding: 25px 50px;
@@ -54,10 +54,12 @@ margin:0 auto; – выравнивает блок по середине
 
 **Границы**
 
+```css
 border: 3px solid black;
 border-width:3px;
 border-style:solid;
 border-color:red;
+```
 
 Мы можем задавать границу отдельно по направлениям
 border-top
