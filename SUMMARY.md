@@ -27,5 +27,5 @@
 * [iframe и гиперссылки](iframe_and_hyperlinks.md)
 * [Формы](forms.md)
 * [Немного о SEO](a few_words_about_seo.md)
-* [Добавляем препроцессоры](adding_preprocessors.md)
+* [Добавляем препроцессоры](addingpreprocessors.md)
 
