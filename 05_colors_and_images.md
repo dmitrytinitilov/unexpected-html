@@ -31,12 +31,12 @@ Red Green Blue
 
 0-9 
 
-A  = 10
-B  = 11
-C
-D
-E
-F  = 15
+A  = 10<BR>
+B  = 11<BR>
+C<BR>
+D<BR>
+E<BR>
+F  = 15<BR>
 
 
 1A = 1*16+A =16+10 =26
