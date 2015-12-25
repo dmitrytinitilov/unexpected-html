@@ -38,12 +38,22 @@
 <dl>
   <dt>Coffee</dt>
   <dd>Black hot drink</dd>
+  <dd>Black hot drink</dd>
   <dt>Milk</dt>
   <dd>White cold drink</dd>
 </dl>
 ```
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
 
-CSS-свойства 
+
+
+**CSS-свойства **
 list-style-type:none; 
 
 **Практика:**
