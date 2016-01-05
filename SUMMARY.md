@@ -24,8 +24,9 @@
 * [Анимации](21_animations.md)
 * [Необходимо больше CSS-селекторов](22_we_need_more_cssselectors.md)
 * [До и после: cелекторы :before :after](23_before_after.md)
-* [iframe и гиперссылки](iframe_and_hyperlinks.md)
-* [Формы](forms.md)
-* [Немного о SEO](a few_words_about_seo.md)
-* [Добавляем препроцессоры](addingpreprocessors.md)
+* [iframe и гиперссылки](24_iframe_and_hyperlinks.md)
+* [Формы](25_forms.md)
+* [Немного о SEO](26_a few_words_about_seo.md)
+* [flexbox](27_flexbox.md)
+* [Добавляем препроцессоры](28_addingpreprocessors.md)
 
