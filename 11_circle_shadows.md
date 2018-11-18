@@ -45,6 +45,18 @@ border-radius: 10px/20px;
 10px - горизонтальный радиус
 20px - вертикальный радиус
 
+Если поиграться с настройками, то можно получить даже полукруг.
+
+```css
+.semi_circle {
+     width:200px;
+     height:100px;
+     border-radius:50% 50% 50% 50% / 0% 0% 100% 100%;
+}
+```
+
+![Полукруг](pics/11_shadow_circle/half_circle.svg)
+
 **Полезное чтиво:**
 
 1. CSS-tricks о border-radius
