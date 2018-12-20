@@ -88,6 +88,9 @@ https://css-tricks.com/centering-css-complete-guide/
 Pre-loader на CSS
 https://webdesignviews.com/css-pre-loader/
 
+**Мануал по Markdown**
+https://commonmark.org/help/tutorial/index.html
+
 **Книги**
 
 http://www.awwwards.com/free-e-book-design-for-a-perfect-screen.html

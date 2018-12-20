@@ -115,8 +115,7 @@ http://www.w3schools.com/css/css3_shadows.asp
 text-shadow: 0 0 3px #FF0000;
 ```
 
-background-clip:text может помочь в создании внутреней тени. Проблемв с том, что поддержка этого значения весьма слабая.
-
+background-clip:text может помочь в создании внутреней тени. Проблема с том, что поддержка этого значения весьма слабая.
 
 **Полезное чтиво:**
 
@@ -132,6 +131,8 @@ https://codepen.io/adambundy/pen/HtmaK
 4. Дизайн-тренды, которые уже не в моде
 http://designshack.net/articles/graphics/5-former-design-trends-that-arent-cool-anymore-so-stop-using-them/
 
+5. О применении свойства background-clip:text
+https://webplatform.news/issues/2018-11-02
 
 
 

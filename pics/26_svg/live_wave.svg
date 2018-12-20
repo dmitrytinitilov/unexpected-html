@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 320 200" width="320" height="200">
+	<defs>
+	<path d="M311.75 96.29C302.06 74.33 296 60.6 293.58 55.11C281.23 27.15 241.52 27.27 229.34 55.31C215.31 87.63 205.06 111.24 191.01 143.59C179.37 170.39 141.07 169.54 130.64 142.24C118.61 110.78 109.56 87.09 97.15 54.63C86.9 27.8 49.69 25.83 36.66 51.43C33.61 57.41 26 72.36 13.81 96.29" id="wave"></path>
+	</defs>
+	<use xlink:href="#wave" opacity="1" fill-opacity="0" stroke="cornflowerblue" stroke-width="10" stroke-opacity="1"></use>
+
+	<circle id="circle" r="20" cx="0" cy="0" fill="cornflowerblue"></circle>
+
+	<animateMotion xlink:href="#circle" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1">
+	<mpath xlink:href="#wave"></mpath>
+	</animateMotion>
+</svg>

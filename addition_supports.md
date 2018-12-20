@@ -11,6 +11,15 @@
 }
 ```
 
+**Variable fonts**
+
+1. Демка возможностей
+https://v-fonts.com/
+
+2. Описание от Google
+https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts/
+
+
 **Полезное чтиво:**
 
 1. Применение @supports на примере shape-outside и background-blend-mode  
