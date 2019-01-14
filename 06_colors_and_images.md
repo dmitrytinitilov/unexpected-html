@@ -31,9 +31,9 @@ Red Green Blue
 
 A  = 10<BR>
 B  = 11<BR>
-C<BR>
-D<BR>
-E<BR>
+C  = 12<BR>
+D  = 13<BR>
+E  = 14<BR>
 F  = 15<BR>
 
 1A=1*16+A = 16+10 =26

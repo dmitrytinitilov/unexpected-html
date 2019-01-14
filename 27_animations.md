@@ -170,6 +170,12 @@ https://css-tricks.com/using-multi-step-animations-transitions/
 8. Основные принципы использования анимации
 https://vc.ru/design/46504-osnovnye-principy-ispolzovaniya-animacii-v-ux
 
+9. Пример анимации с эхо-волнами
+https://gist.github.com/AdonaiAraya/03a6a18c47bc4f2d9acf780e0c3f6b99
+
+10. Glitch-эффект
+https://ihatetomatoes.net/how-to-create-css-glitch-effect/
+
 
 
 **Практика**

@@ -163,7 +163,7 @@ http://www.webmasters.by/images/articles/css/circle-hover-effects/index6.html
 http://habrahabr.ru/post/235531/<BR>
 http://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/<BR>
 
-**3D-фугуры**
+**3D-фигуры**
 http://frontender.info/balls/   шары<BR>
 http://learnsome.co/blog/zelda/ треугольники<BR>
 http://habrahabr.ru/post/151300/ куб<BR>

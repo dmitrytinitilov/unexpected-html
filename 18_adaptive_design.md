@@ -154,6 +154,13 @@ _tv_ – Для телевизоров.
 @media print and (min-resolution: 300dpi) { ... }
 ```
 
+**Оптимизация картинок<picture>**
+
+http://www.html5rocks.com/en/tutorials/responsive/picture-element/
+
+https://developer.mozilla.org/en/docs/Web/HTML/Element/picture
+
+
 **CSS-шлюзы**
 
 https://habrahabr.ru/company/mailru/blog/315196/

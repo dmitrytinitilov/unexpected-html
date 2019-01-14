@@ -3,7 +3,9 @@
 
 Почти все, кто сталкивался с HTML/CSS замечали, что простота изучения синтаксиса, никак не упрощает дальнейшую верстку - элементы ведут себя не так как ожидалось, отображение страницы не совпадает в разных браузерах, а просмотр сайта на компьютере друга разбрасывает сайт по экрану. Порой удается добиться шаткого равновесия, но малейшие изменения превращают сайт в кашу.
 
-Цель этой книги дать учащемуся поэтапную схему верстки, а также полное понимание происходящего. Данную книгу можно рассматривать скорее как учебник по HTML/CSS, чем справочник по нему.
+Цель этой книги дать учащемуся поэтапную схему верстки, а также полное понимание происходящего. Данную книгу можно рассматривать скорее как учебник по HTML/CSS, чем справочник по нему. 
+
+Здесь Вы найдете более 200 задач по верстке, которые познакомят Вас с разнообразными проблемами и особенностями html/css, включая верстку на flexbox, grid layout, svg, адаптивную верстку и анимации.
 
 https://telegram.me/dmitrytinitilov
 
@@ -16,7 +18,7 @@ https://github.com/dmitrytinitilov/unexpected-html
 #Оглавление
 
 * [Введение](README.md)
-* [1.Старт](01_start.md)
+* [1. Старт](01_start.md)
 * [2. Строчные и блочные элементы](02_inline_and_block_elements.md)
 * [3. Внешний CSS. Базовые CSS-селекторы](03_basic_css_selectors.md)
 * [4. Отступы](04_margins_and_paddings.md)
@@ -40,32 +42,28 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [22. \#Grid'ы](22_grid_layout.md)
 * [23. Списки](23_lists.md)
 * [24. Необходимо больше CSS-селекторов](24_we_need_more_cssselectors.md)
-* [25. \#До и после: cелекторы :before :after](25_before_after.md)
+* [25. \# До и после: cелекторы :before :after](25_before_after.md)
 * [26. \# SVG](26_svg.md)
 * [27. Анимации](27_animations.md)
 * [28. \# Формы](28_forms.md)
-* [\# Frontend процесс](frontend_process.md)
 * [29. \# Таблицы](29_tables_heritage.md)
 * [30. float и clearfix](30_float_and_clearfix.md)
 * [31. \# Переменные в CSS](31_css_variable.md)
-* [32. \# Добавляем препроцессоры](32_addingpreprocessors.md)
-* [SCSS](scss.md)
-* [\# Bootstrap](bootstrap.md)
-* [\# Немного о SEO](33_a_few_words_about_seo.md)
-* [COFFEE Организация кода](code_twitches.md)
-* [\# iframe и гиперссылки](34_iframe_and_hyperlinks.md)
-* [\#COFFEE Foundation](foundation.md)
+* [32 \# SCSS](32_scss.md)
+* [33 \# Организация кода](33_code_structure.md)
+* [34 \# Bootstrap](34_bootstrap.md)
+* [35 \# Frontend процесс](35_frontend_process.md)
+* [36 \# Семантика](36_semantics.md)
 * [\# @supports](addition_supports.md)
-* [\#COFFEE Основы jQuery для дизайнеров](jquery_for_designers.md)
 * [Дополнение по Sublime 3](addition_sublime_3.md)
 * [Emmet](emmet_cheatsheet.md)
 * [\#Полезные ресурсы](helpful_resources.md)
 * [Руководства по HTML](html_manuals.md)
 * [Codepens](codepens.md)
 * [Вдохновение](inspiration.md)
+* [Благодарности](gratitudes.md)
 * [Разное](other.md)
 * [\#TODO list](todo.md)
-
 
 
 

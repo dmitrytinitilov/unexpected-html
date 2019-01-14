@@ -109,10 +109,6 @@ width:calc(100% - 200px)
 Пример бесплатных PSD-шаблонов можно найти на сайте http://freebiesbug.com/psd-freebies/website-template/
 
 
-**Модульные сетки**
-
-
-
 
 **Практика:**
 

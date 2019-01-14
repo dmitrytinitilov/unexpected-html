@@ -1,0 +1,12 @@
+<svg viewBox="0 0 230 100" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+       <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="2"/>
+       <line x1="-2" y1="2" x2="2" y2="-2" stroke="black" stroke-width="2"/>
+       <line x1="8" y1="12" x2="12" y2="8" stroke="black" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <circle cx="50"  cy="50" r="50" fill="url(#star)"/>
+  
+</svg>

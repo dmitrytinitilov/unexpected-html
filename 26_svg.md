@@ -262,6 +262,24 @@ https://getinstance.info/articles/css/making-sense-of-clip-path/
 
 https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern
 
+```html
+<svg viewBox="0 0 230 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+       <line x1="0" y1="10" x2="10" y2="0" stroke="black" stroke-width="2"/>
+       <line x1="-2" y1="2" x2="2" y2="-2" stroke="black" stroke-width="2"/>
+       <line x1="8" y1="12" x2="12" y2="8" stroke="black" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <circle cx="50"  cy="50" r="50" fill="url(#star)"/>
+</svg>
+```
+В результате получим
+
+![Полосатый круг через паттерн на SVG](pics/26_svg/circle.svg)
+
+
+
 
 **Фильтры и маски**
 
