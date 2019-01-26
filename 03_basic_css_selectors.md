@@ -163,6 +163,8 @@ _style.css_
 
 ```css
 .red_block {
+    width:200px;
+    height:200px;
     background-color:red;
 }
 ```
@@ -185,6 +187,8 @@ _style.css_
 ```css
 #footer {
     width:100%;
+    height:200px;
+    background-color:orange;
 }
 ```
 

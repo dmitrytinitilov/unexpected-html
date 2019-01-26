@@ -1,29 +1,34 @@
-# Bootstrap
+#Bootstrap
 
-http://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
+Bootstrap - является одним из популярных CSS-фреймворков(заготовок) для верстки сайта.
 
-http://webcomplex.com.ua/css/adaptivnyj-dizajn-s-pomoshhyu-bootstrap-3-grid-system-delaem-maket-sajta.html
+**Подключение**
 
-O Bootstrap 4<BR>
-https://blog.getbootstrap.com/2016/07/27/bootstrap-4-alpha-3/
+Добавляем подключение bootstrap.min.css в head
 
-
-**Подключение через CDN**
 
 ```html
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 ```
+
+Подключаем скрипты внизу body
+
+```html
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+```
+
+Для запуска шаблона нам понадобится viewport соответствующий размерам устройства
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
+Нужно также понимать, что box-sizing в Bootstrap установлен в значение content-box;
 
 **Минимальный скрипт**
 
-Добавляем в body
+Добавим в body
 
 ```html
 <div class="container-fluid">
@@ -31,15 +36,77 @@ https://blog.getbootstrap.com/2016/07/27/bootstrap-4-alpha-3/
   <p>This is some text.</p> 
 </div>
 ```
+В результате у нас должен получиться следующий код
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	
+	<div class="container-fluid">
+	  <h1>My First Bootstrap Page</h1>
+	  <p>This is some text.</p> 
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
+
+```
+
+**Контейнеры**
 
 .container  - контейнер с фиксированной шириной
+
+Обратите внимание, что мы использовали в div'e класс container, что создает контейнер с фиксированной шириной для нашего сайта. Но не забывайте, что даже такой контейнер является адаптивным, то есть для разных типов устройтств он будет приобретать разную ширину. То есть при сужении окна .container будет хранить свою ширину, но затем резко сужаться, переходя на новую ширину.
+
 .container-fluid – резиновый контейнер
+
+.container-fluid занимает 100% по ширине от родительского блока. При сужении окна он также плавно сужается.
+
+Более наглядно увидеть разницу можно, передя по ссылке.
 
 http://stackoverflow.com/questions/22262311/container-fluid-vs-container
 
 
-
 **Работа с сеткой**
+
+Bootstrap пользуется идеей сетки, похожей на ту, которую мы строили в разделе "Модульные сетки". Разница состоит в том, что в нашем варианте было 4ре колонки, а у Bootstrap'a их 12. 
+
+Мы можем работать без префиксов и засчет flexbox они будут растягиваться на всю ширину.
+
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+```
 
 
 ```html
@@ -98,242 +165,70 @@ https://codepen.io/SitePoint/pen/raBPeo
 **
 
 ```css
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+// Для устройств меньше 576 и префикса xs нет медиа-запроса, потому что к ним применяются свойства по умолчанию
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+// Маленькие устройства, префикс sm
+@media (min-width: 576px) { ... }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+// Средние устройства, префикс md
+@media (min-width: 768px) { ... }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+// Большие устройства, префикс lg
+@media (min-width: 992px) { ... }
+
+// Очень большие устройства, префикс xl
+@media (min-width: 1200px) { ... }
 ```
 
-**Работа с картинками**
-```html
-<img class="img-responsive" src="img_chania.jpg" alt="Chania" width="460" height="345">
-```
+**Выравнивание**
 
+вертикальное
+align-items-start
 
-**Работа со шрифтами**
+горизонтальное
+justify-content-start
 
-&lt;h1&gt; - &lt;h6&gt; - заголовки
-&lt;small&gt; - второстепенный текст
-&lt;mark&gt; - подсветка
-&lt;abbr&gt; - подчеркивает пунктиром
-&lt;blockquote&gt; - цитата
-&lt;code&gt; -код
-&lt;kbd&gt; - комбинации клавиш
-
-**Работа с таблицами**
-
-.table – обычная таблица без вертикальных ограничений
-.table-striped – полосатая таблица
-.table-bordered – внутренние границы
-.table-hover – таблица с подсветкой рядков при наведении
-
-**Jumbotron**
+внутри колонки
 
 ```html
-<div class="container">
-  <div class="jumbotron">
-    <h1>Bootstrap Tutorial</h1> 
-    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-    responsive, mobile-first projects on the web.</p> 
-  </div>
-  <p>This is some text.</p> 
-  <p>This is another text.</p> 
-</div>
-```
-
-**Делаем заголовок страницы**
-
-```html
-<div class="page-header">
-  <h1>Example Page Header</h1>
-</div>
-```
-
-**Закругления well**
-
-```html
-<div class="well well-sm">Small Well</div>
-<div class="well well-lg">Large Well</div>
-```
-
-**Стили кнопок**
-
-.btn-default
-.btn-primary
-.btn-success
-.btn-info
-.btn-warning
-.btn-danger
-.btn-link
-
-**Пример**
-
-```html
-<button type="button" class="btn btn-default">Default</button>
-```
-
-Размеры кнопок
-.btn-lg
-.btn-md
-.btn-sm
-.btn-xs
-<button type="button" class="btn btn-primary btn-block">Button 1</button>
-Можно задать активные и деактивированные кнопки .active .disabled
-
-**Группы кнопок**
-
-```html
-<div class="btn-group">
-  <button type="button" class="btn btn-primary">Apple</button>
-  <button type="button" class="btn btn-primary">Samsung</button>
-  <button type="button" class="btn btn-primary">Sony</button>
-</div>
-```
-
-**Вертикальные группы кнопок**
-
-```html
-<div class="btn-group-vertical">
-  <button type="button" class="btn btn-primary">Apple</button>
-  <button type="button" class="btn btn-primary">Samsung</button>
-  <button type="button" class="btn btn-primary">Sony</button>
-</div>
-```
-
-**Выпадающее меню**
-
-```html
-<div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Sony <span class="caret"></span></button>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Tablet</a></li>
-        <li><a href="#">Smartphone</a></li>
-      </ul>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start">
+      One of three columns
     </div>
-Glyphicons
-<span class="glyphicon glyphicon-envelope"></span>
-Badges
-<a href="#">News <span class="badge">5</span></a>
-Бейдж внутри кнопки
-<button type="button" class="btn btn-primary">Primary <spanclass="badge">7</span></button>
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    <span class="sr-only">70% Complete</span>
-  </div>
+    <div class="col align-self-center">
+      One of three columns
+    </div>
+    <div class="col align-self-end">
+      One of three columns
+    </div>
+  </div>
 </div>
 ```
 
+**Изменение порядка колонок**
 
-**Карусель**
+В Bootstrap 4 за счет flexbox у нас появляется изменение порядка колонок при адаптивных изменений.
 
-Пример готовой карусели
-https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
-
-```html
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="img_chania.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="img_chania2.jpg" alt="Chania">
-    </div>
-
-    <div class="item">
-      <img src="img_flower.jpg" alt="Flower">
-    </div>
-
-    <div class="item">
-      <img src="img_flower2.jpg" alt="Flower">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-```
-
-data-ride="carousel" обеспечивает вращение
-data-interval="500" – задает скорость смены. Задавать нужно в главном div’e<BR>
-Наличие класса .slide – обеспечивает скольжение при смене<BR>
-Ширину картинки можно поставить через class=”carousel-inner”<BR>
-Pause - Ставит показ слайдов на паузу при фокусе «карусели» и возобновляет показ при потере фокуса.
- 
-Добавляем **carousel-caption**
-
-```html
-<div class="item">
-   <img src="img_flower2.jpg" alt="Flower">
-   <div class="carousel-caption">
-      <h3>Flowers</h3>
-      <p>Beatiful flowers in Kolymbari, Crete.</p>
-   </div>
-</div>
-```
-
-
-**Пример верстки**
-http://webcomplex.com.ua/css/adaptivnyj-dizajn-s-pomoshhyu-bootstrap-3-grid-system-delaem-maket-sajta.html
-
-
-**Создание «гармошки» на Bootstrap**
-http://mybootstrap.ru/javascripts/#collapse
+order-md-2
 
 
 **Практика**
-1. Создание сайта с пятью картинками в два ряда
+1. Сверстайте шаблон, указанный на картинке  
+![хедер и три колонки](pics/layouts/three_columns.svg)  
 2. Создание сайта с хедером, футером, сайдбарами(грааль)
-![хедер, два сайдбара, контент](pics/02_inline_and_block_elements/grail.gif)
+![хедер, два сайдбара, контент](pics/02_inline_and_block_elements/grail.gif)  
 3.Создаем резиновый сайт\(на всю ширину экрана\) с тремя блоками \(см рисунок\)
 ![хедер, сайдбар, контент](pics/02_inline_and_block_elements/sidebar_content_menu.gif)
 4. Есть боковая колонка и блок контента. При сужении боковая панель должна переместиться на верх шаблона
 ![сайдбар, контент](pics/02_inline_and_block_elements/sidebar_content.gif)
 <BR>![хедер, контент](pics/21_adaptive_design/content_header.gif)
-
 5. Карусель на Bootstrap
-Настройка слайдов, их размера, прокрутки и времени прокрутки
-
+Настройка слайдов, их размера, прокрутки и времени прокрутки  
 6. Верстка адаптивного макета на Bootstrap
 http://www.gridelicious.com/themes/treble/demo/
 
-**Видео-курс по Bootstrap**
 
-https://www.youtube.com/watch?v=f7CXSxeLCik
 
-**Полезное чтиво:**
-
-1. Разница между Bootstrap4 и 3 https://www.quackit.com/bootstrap/bootstrap_4/differences_between_bootstrap_3_and_bootstrap_4.cfm
-
-2. Использование flexbox в Bootstrap 4
-https://medium.com/codingthesmartway-com-blog/introduction-to-bootstrap-4-flex-layout-flexbox-for-bootstrap-f85405ce5ebf
-
-3. Альтернативный взгляд на использования jquery и bootstrap
-http://frontender.info/whats-wrong-with-jquery-and-bootstrap/
 
 

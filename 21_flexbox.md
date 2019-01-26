@@ -12,15 +12,174 @@
 
 Важно помнить, что flex-контейнер по умолчанию обжимается по ширине контента, поэтому ширину нужно задавать явно.
 
+Создадим внутри контейнера блок и рассмотрим его поведение
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="flex_block"></div>
+	</div>
+</body>
+</html>
+```
+
+css к этому шаблону
+
+```css
+.container {
+	display: flex;
+	background-color: lightgrey;
+}
+
+.flex_block {
+	background-color: cornflowerblue;
+	height: 200px;
+}
+```
+
+Несмотря на то, что блок находится внутри контейнера, мы его не видим, потому ни ширину, ни flex-basis мы не задали. Разберемся как исправить эту ситуацию.
+
+
 **Поведение flex-блоков**
 
 Резберемся как теперь поменялось поведение вложенных блоков
 
-**flex-basis** - аналог min-width для flex-элемента
+**flex-basis** - аналог ширины для flex-элемента
+
+Добавим flex-basis:700px; в наш flex_block и посмотрим, что получится
+
+```css
+.flex_block {
+	background-color: cornflowerblue;
+	height: 200px;
+	flex-basis:700px;
+}
+```
+При этом при расширении блок будет оставаться 700px, но вот, если экран станет уже 700px, то блок начнет сжиматься вместе с экраном.
 
 **flex-grow** - определяет как будет распределятся избыточное пространство между ширинами блока. 1 - значение по умолчанию, но мы можем заставить ширину блока расти в три раза быстрее, поставив 3. Без flex-grow блок не растягивается.
 
+По сути с появлением flex-grow блок начинает занимать свободное от flex-basis'a пространство. flex-grow показывает какую часть этого свободного пространства мы заберем.
+
+
 **flex-shrink** - определяет как распределяется "негативное" пространство\(то есть сколько пикселей нам не хватает, чтобы полностью разместить все блоки по ширине\) между ширинами блоков. 1 - значение по умолчанию и его можно только уменьшать. 0 - будет означать, что ширина блока не изменяется при сжатии. Т.е. мы негативное пространство умножаем на коэфициент, указанный в flex-shrink.
+
+**Пример**
+
+Теперь попробуем разобраться как работают эти свойства на [примере](https://codepen.io/dmitrytinitilov/pen/rPagPN).
+
+Сделаем четыре блока и обернем каждый в контейнер, чтобы они не влияли друг на друга.
+
+
+```html
+	<div class="container">
+		<div class="flex_block">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="fluid_block">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="half_fluid_block">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="fixed_block">
+		</div>
+	</div>
+```
+
+Добавим необходимый CSS
+
+Все контейнеры будут display:flex
+
+```css
+.container {
+    display: flex;
+    background-color: lightgrey;
+}
+```
+
+**flex_block**(синий)
+
+Блок с классом flex_block будет у нас отвечать за поведение блока внутри flex-контейнера по умолчанию, без задания свойств flex-grow и flex-shrink.
+
+```css
+.flex_block {
+	background-color: cornflowerblue;
+	height: 200px;
+	flex-basis:700px;
+}
+```
+
+Если мы посмотрим на поведение этого блока, то увидим, что когда свободное пространство есть, блок занимает ширину, указанную в flex-basis. Но при сжатии шаблона менее, чем на 700px, блок также начинает сжиматься.
+
+**fluid_block**(фиолетовый)
+
+fluid_block будет имитировать резиновый блок, который занимает всё свободное пространство. Правда при наличии других блоков, его поведение может отличаться от "чистого" резинового блока с шириной, заданной через %.
+
+
+```css
+.fluid_block {
+	background-color: purple;
+	height: 200px;
+	flex-basis:700px;
+	flex-grow:1;
+	flex-shrink:1;
+}
+```
+
+Мы видим, что несмотря на flex-basis:700px, fluid_block - занимает всё свободное пространство, если оно есть. При сжатии, он также сжимается вместе с контейнером.
+
+**.half_fluid_block**(оранжевый)
+
+Пожалуй блок с наиболее интересным поведением
+
+```css
+.half_fluid_block {
+	background-color: orange;
+	height: 200px;
+	flex-basis:700px;
+	flex-grow:0.5;
+	flex-shrink:0.5;
+}
+```
+
+flex-grow:0.5 заставляет забирать свободное пространство не целиком, а только его половину. Это хорошо видно рядом с flex_block и fluid_block. fluid_block забирает всё свободное пространство, flex_block никак не реагирует, а half_fluid_block забирает себе половину от разницы между fluid_block и flex_block.
+
+![примеры разных flex-grow блоков на flexbox](pics/21_flexbox/half_flex_block.svg)
+
+Аналогично особенности flex-shrink:0.5 можно посмотреть на примере fluid_block'a и fixed_block'a. При сжатии half_fluid_block сокращает расстояние, но в два раза меньше, чем fluid_block
+
+![примеры разных flex-grow блоков на flexbox](pics/21_flexbox/flex_shrink.svg)
+
+
+**.fixed_block**(черный)
+
+Пример блока с фиксированной шириной, но построенного внутри flex-контейнера. Ширину блока по сути определяет в этой ситуации flex-basis. При наличии избыточного пространства блок никак не реагирует. При сжатии меньше, чем на 700px блок заставляет появиться скроллинг у окна.
+
+```css
+.fixed_block {
+	background-color: black;
+	height: 200px;
+	flex-basis:700px;
+	flex-grow:0;
+	flex-shrink:0;
+}
+```
+
+
 
 **flex** - обобщенное свойсво, которое задает flex-grow, flex-shrink и flex-basis одновременно.
 
@@ -92,7 +251,7 @@ https://stackoverflow.com/questions/26160839/css-flex-box-layout-full-width-row-
 
 Теперь можем задать направление flex'a
 
-**flex-direction** определяет как именно будут располагаться блоки в контейнере.
+**flex-direction** определяет как именно будут располагаться блоки в контейнере и направление основной оси.
 
 ```css
 flex-direction: row | row-reverse | column | column-reverse;
@@ -104,7 +263,7 @@ _flex-direction:row-reverse_ - - располагает блоки в ряд, п
 
 _flex-direction: column_ - выстраивает блоки в колонку
 
-
+Важный момент: при выборе значений column и column-reverse flex-basis становится
 
 **flex-flow** - обобщенное свойство для flex-direction и flex-wrap. Например:
 
@@ -112,7 +271,7 @@ _flex-direction: column_ - выстраивает блоки в колонку
 flex-flow: row wrap
 ```
 
-**justify-content** - выравнивание контента по ширине
+**justify-content** - выравнивание контента по ширине(по основной оси. При смене flex-direction на column будет выравнивать по вертикали)
 
 justify-content: flex-start; - по левому краю
 
@@ -124,7 +283,7 @@ justify-content: space-between; - распределяет избыточное 
 
 justify-content: space-around; - распределяет пространство равномерно слева и справа от каждого блока.
 
-**align-items** - выравнивание по вертикали
+**align-items** - выравнивание по вертикали(по вспомогательной оси. При смене flex-direction на column будет выравнивать по горизонтали)
 
 _align-items: stretch_ - растягивает вложенные блоки на всю высоту контейнера.
 
