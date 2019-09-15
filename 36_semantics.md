@@ -65,3 +65,9 @@ https://www.xml-sitemaps.com/
 Google Analytics, Google Webmasters
 
 **Google Maps**
+
+
+**Полезное чтиво:**
+
+1. Использование семантических тегов вместо div'ов
+https://dev.to/kenbellows/stop-using-so-many-divs-an-intro-to-semantic-html-3i9i

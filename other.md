@@ -15,3 +15,9 @@ column-span:all; - на сколько колонок распространит
 https://habrahabr.ru/post/153955/
 
 
+**Полезное чтиво:**
+
+1. 21 совет по CSS
+https://proglib.io/p/css-protips/
+
+

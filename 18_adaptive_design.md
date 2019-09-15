@@ -154,11 +154,15 @@ _tv_ – Для телевизоров.
 @media print and (min-resolution: 300dpi) { ... }
 ```
 
-**Оптимизация картинок<picture>**
+**Адаптивные картинки**
 
-http://www.html5rocks.com/en/tutorials/responsive/picture-element/
+**Полезное чтиво:**
 
-https://developer.mozilla.org/en/docs/Web/HTML/Element/picture
+1.https://proglib.io/p/responsive-images/
+
+2. http://www.html5rocks.com/en/tutorials/responsive/picture-element/
+
+3. https://developer.mozilla.org/en/docs/Web/HTML/Element/picture
 
 
 **CSS-шлюзы**
@@ -177,6 +181,9 @@ https://medium.com/@AshConnolly/managing-media-queries-ac2205d1a926#.z21akyckz
 
 4. Подстраиваем сайт под ночной режим
 https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
+
+5. Выбор цветов для темной темы
+https://vc.ru/design/52140-darkmode
 
 
 **Практика:**

@@ -1,4 +1,4 @@
-# Цвета и картинки
+# Цвета, картинки, CSS-переменные
 
 **Способы задания цвета**
 
@@ -97,22 +97,23 @@ http://www.petrick.ru/yellow
 
 3. 5 способов использования красного в цветах вашей фирмы https://spark.ru/startup/logo/blog/31834/5-sposobov-ispolzovaniya-krasnogo-v-tsvetah-vashej-firmi
 
-4. Использование переменных для hsl-цветов https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/
-
-5. О цветовых схемах под реальный проект
+4. О цветовых схемах под реальный проект
 https://refactoringui.com/previews/building-your-color-palette/
 
-6. Подборка сервисов для выбора цвета
+5. Подборка сервисов для выбора цвета
 https://habr.com/company/ua-hosting/blog/275919/
 
-7. Разбор проблем с выбором цвета  
+6. Разбор проблем с выбором цвета  
 https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.1vb9nf2sc
 
-8. Новые возможности для работы с цветом: функция color,CSS-переменные, mix-blend-mode
+7. Новые возможности для работы с цветом: функция color,CSS-переменные, mix-blend-mode
 https://frontender.info/the-power-of-rgba/
 
-9. mix-blend-mode 
+8. mix-blend-mode 
 https://css-tricks.com/almanac/properties/m/mix-blend-mode/
+
+9. Выбор цветов для темной темы
+https://vc.ru/design/52140-darkmode
 
 
 
@@ -165,7 +166,12 @@ https://habrahabr.ru/post/275735/
 https://habrahabr.ru/post/278745/
 
 **Полезное чтиво:**
+
+1. Форматы изображений
 https://htmlacademy.ru/blog/113-image-formats
+
+2. 13 приемов по оптимизации картинок
+https://vc.ru/seo/74892-13-priemov-optimizacii-izobrazheniy-kak-vyyti-v-top-poiska-po-kartinkam
 
 **Сервисы для оптимизации графики**
 
@@ -176,4 +182,24 @@ https://kraken.io/web-interface
 https://imageoptim.com/mac
 
 http://getoptimage.com/
+
+**Переменные в CSS**
+
+С помощью CSS-переменных мы можем задать основные и дополнительные цвета в нашем проекте.
+
+```css
+:root {
+  --primary-color: violet;
+}
+
+#block {
+  color: var(--primary-color);
+}
+```
+
+[Подробнее о CSS-переменных](31_css_variable.html)
+
+**Полезное чтиво:**
+
+1. Использование переменных для hsl-цветов https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/
 

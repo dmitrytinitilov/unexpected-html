@@ -7,6 +7,8 @@
 
 Здесь Вы найдете более 200 задач по верстке, которые познакомят Вас с разнообразными проблемами и особенностями html/css, включая верстку на flexbox, grid layout, svg, адаптивную верстку и анимации.
 
+
+Для вопросов по книге
 https://telegram.me/dmitrytinitilov
 
 [Skype: dmitry_tinitilov](skype:dmitry_tinitilov?call)
@@ -23,7 +25,7 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [3. Внешний CSS. Базовые CSS-селекторы](03_basic_css_selectors.md)
 * [4. Отступы](04_margins_and_paddings.md)
 * [5. Фиксированная и резиновая верстки](05_fixed_and_fluid_designs.md)
-* [6. Цвета и картинки](06_colors_and_images.md)
+* [6. Цвета, картинки, CSS-переменные](06_colors_and_images.md)
 * [7. Свойства фона](07_background.md)
 * [8. Приклеивание футера](08_sticky_footer.md)
 * [9. Свойства текста](09_text_properties.md)
@@ -37,21 +39,21 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [17. Наложение объектов](17_objects_overlap.md)
 * [18. Адаптивная верстка](18_adaptive_design.md)
 * [19. Viewport](19_viewport.md)
-* [20. \#Модульные сетки](20_grid_design_system.md)
-* [21. \# flexbox](21_flexbox.md)
-* [22. \#Grid'ы](22_grid_layout.md)
-* [23. Списки](23_lists.md)
-* [24. Необходимо больше CSS-селекторов](24_we_need_more_cssselectors.md)
-* [25. \# До и после: cелекторы :before :after](25_before_after.md)
-* [26. \# SVG](26_svg.md)
-* [27. Анимации](27_animations.md)
-* [28. \# Формы](28_forms.md)
-* [29. \# Таблицы](29_tables_heritage.md)
-* [30. float и clearfix](30_float_and_clearfix.md)
-* [31. \# Переменные в CSS](31_css_variable.md)
-* [32 \# SCSS](32_scss.md)
-* [33 \# Организация кода](33_code_structure.md)
-* [34 \# Bootstrap](34_bootstrap.md)
+* [20. \# Организация кода](20_code_structure.md)
+* [21. \# SCSS](21_scss.md)
+* [22. \# Переменные в CSS](22_css_variable.md)
+* [23. \#Модульные сетки](23_grid_design_system.md)
+* [24 \# Bootstrap](24_bootstrap.md)
+* [25. \# flexbox](25_flexbox.md)
+* [26. \#Grid'ы](26_grid_layout.md)
+* [27. Списки](27_lists.md)
+* [28. Необходимо больше CSS-селекторов](28_we_need_more_cssselectors.md)
+* [29. \# До и после: cелекторы :before :after](29_before_after.md)
+* [30. Анимации](30_animations.md)
+* [31. \# Формы](31_forms.md)
+* [32. \# SVG](32_svg.md)
+* [33. \# Таблицы](33_tables_heritage.md)
+* [34. float и clearfix](34_float_and_clearfix.md)
 * [35 \# Frontend процесс](35_frontend_process.md)
 * [36 \# Семантика](36_semantics.md)
 * [\# @supports](addition_supports.md)
@@ -64,6 +66,8 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [Благодарности](gratitudes.md)
 * [Разное](other.md)
 * [\#TODO list](todo.md)
+
+
 
 
 

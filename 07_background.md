@@ -29,8 +29,11 @@ background-size:  100% 100%;
 ```
 
 Значение **cover** - растягивает фоновую картинку до тех пор, пока она не закроет собой блок<BR>
+![background-size cover](pics/layouts/cover.svg)
 
 Значение **contain** - сужает фоновую картинку, пока она полностью не поместится в блок
+
+![background-size cover](pics/layouts/contain.svg)
 
 **background-repeat**
 
@@ -103,16 +106,20 @@ http://subtlepatterns.com/
 Мы можем указать несколько фонов в конструкции background. Первый фон в списке будет самым верхним.
 
 ```css
-background:url('duke.gif') center/100px 50px,
-           url('stairs.jpg') center/cover;
+.block {
+    background:url('duke.gif') center/100px 50px,
+               url('stairs.jpg') center/cover;
+}
 
 ```
 Либо отдельно по свойствам фона
 
 ```css
-background-image:url('duke.gif'),url('stairs.jpg');
-background-size:100px 50px,cover;
-background-position:center,center;
+.block {
+    background-image:url('duke.gif'),url('stairs.jpg');
+    background-size:100px 50px,cover;
+    background-position:center,center;
+}
 ```
 
 http://habrahabr.ru/company/microsoft/blog/137705/

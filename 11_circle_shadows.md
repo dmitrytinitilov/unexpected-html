@@ -117,6 +117,11 @@ text-shadow: 0 0 3px #FF0000;
 
 background-clip:text может помочь в создании внутреней тени. Проблема с том, что поддержка этого значения весьма слабая.
 
+**background-clip**
+
+https://css-tricks.com/how-to-do-knockout-text/
+
+
 **Полезное чтиво:**
 
 1. Эффекты для текста:
@@ -146,5 +151,11 @@ https://webplatform.news/issues/2018-11-02
 6. Делаем retro-эффект для текста http://enjoycss.com/gallery/text_effects/ec
 
 7. Делаем текст с эффектом вдавленности text-shadow (вариант с background-clip:text)
+8. Верстаем шаблон  
+![rounded layout](pics/11_shadow_circle/rounded_layout.svg)
+9. Верстаем шаблон формы залогинивания сервиса Zeplin. input'ы заменяем на div'ы
+![mac login form](pics/11_shadow_circle/zeplin.png)
+
+
 
 
