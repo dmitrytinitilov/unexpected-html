@@ -1,6 +1,6 @@
 # Трансформации
 
-Cвойство transform модифицирует объект
+Cвойство transform модифицирует объект и его положение
 
 http://www.w3schools.com/cssref/css3_pr_transform.asp<BR>  (пробуем оранжевую кнопку play it)
 
@@ -176,26 +176,28 @@ transition-delay: 1s;
 
 Объединяя трансформации и transition можно получить очень интересные эффекты
 
-**Примеры hover-эффектов**, Вы можете рассмотреть ниже
 
+**Полезное чтиво:**
+
+1. Примеры hover-эффектов
 http://tympanus.net/Tutorials/OriginalHoverEffects/index7.html<BR>
 http://habrahabr.ru/post/149324/<BR>
 http://www.webmasters.by/images/articles/css/circle-hover-effects/index6.html
 
-
-**Паралакс на чистом CSS**
+2. Паралакс на чистом CSS
 http://habrahabr.ru/post/235531/<BR>
 http://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/<BR>
 
-**3D-фигуры**
+3. Видео создания паралакса на чистом CSS
+https://www.youtube.com/watch?v=ln5BWnYMSQA
+
+4. 3D-фигуры
 http://frontender.info/balls/   шары<BR>
 http://learnsome.co/blog/zelda/ треугольники<BR>
 http://habrahabr.ru/post/151300/ куб<BR>
 
-
-**Пример верстки**
+5. Пример верстки
 http://shinydemos.com/
-
 
 **Практика:**
 

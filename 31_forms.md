@@ -38,12 +38,15 @@
 **&lt;select&gt;&lt;option&gt;
 **
 
+
+Это классический выпадающий список. То, что обычно называют классический ComboBox.
+
 ```html
-What does Marseulous Wallace look like?
+Что делать дома?
 <select>
-  <option value="right" selected>Bold</option>
-  <option value="go on">Black</option>
-  <option value="noooo!!">Looks like a ...girl</option>
+  <option value="sitcom">Посмотреть  сериал</option>
+  <option value="book">Почитать книгу</option>
+  <option value="site" selected>Сверстать сайт</option>
 </select>
 ```
 
@@ -57,6 +60,8 @@ https://codepen.io/AngelaVelasquez/pen/Eypnq
 
 
 **&lt;textarea&gt;**
+
+Текстовая область. Идеально подходит, когда нам нужна не одна строчка текста, а хороший текстовый блок.
 
 ```html
 <textarea>

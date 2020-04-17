@@ -97,7 +97,7 @@ https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns
 .container {
     display: grid;
     grid-gap: 5px;    
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 50px 350px;
     grid-template-areas:
         "h"
@@ -105,7 +105,7 @@ https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns
 }
 ```
 
-И через grid-area укажем каким областям что соответствует
+И через grid-area укажем, каким областям что соответствует
 
 ```css
 .header {
@@ -120,9 +120,7 @@ https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns
 ```
 
 
-
-
-Еще один пример
+Еще один пример. Зададим 12 колонок. Будем пользоваться конструкцией repeat(12,fr), чуть позже рассмотрим детальнее её значение.
 
 ```css
 .container {

@@ -1,9 +1,8 @@
 # Анимации
 
-Для работы в ранних версиях Chrome, может использоваться префикс  -webkit
+Мы уже рассмотрели с Вами трансформации через свойство transform. В купе с transition и псевдоклассами мы сумели добиться анимации по событию. Но что если нам нужна многошаговая или циклическая анимации? За это отвечают свойства animation.
 
-Например:
-@-webkit-keyframes  и –webkit-animation
+Как и в кино для анимации нам нужны кадры. Они задаются конструкцией keyframes. Обратите внимание, что example - это свойство нашей анимации.
 
 ```css
 @keyframes example{
@@ -13,7 +12,7 @@
 }
 ```
 
-Элемент, к которому применяется анимация 
+Элемент, к которому применяется анимация. animation-name - имя анимации, которое мы берем из keyframes,а animation-duration - продолжительность этой анимации.
 
 ```css
 div{
@@ -45,13 +44,46 @@ animation-name:example;
 animation-duration:4s;
 ```
 
-**animation-delay** - стартовая задержка
+**Пример анимации левитации**
+
+```css
+.block {
+  width:100px;
+  height:100px;
+  background-color:orangered;
+}
+
+@keyframes do-levitation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0.5em);
+  }
+}
+
+.levitate {
+  animation: do-levitation 1.2s alternate ease-in-out infinite;
+}
+```
+
+Для "левитации" применим класс levitate к нашему блоку
+
+```html
+<div class="block levitate">
+</div>
+```
+
+
+**animation-delay** - стартовая задержка, перед началом анимации
 
 ```css
 animation-delay:2s;  
 ```
 
-**animation-iteration-count** -количество повторений
+**animation-iteration-count** - количество повторений анимации
+
+Ставим целое число или infinite для бесконечного числа раз.
 
 ```css
 animation-iteration-count:infinite;  
@@ -115,8 +147,10 @@ https://designmodo.com/steps-css-animations/
 
 **Мультианимации**
 
+Если нам нужно подключить несколько анимаций, мы можем это сделать через запятую. Удобно при подключении библиотек с анимациями.
+
 ```css
--webkit-animation: shrink 2s ease-out, pulsate 4s 2s infinite ease-in-out;
+animation: shrink 2s ease-out, pulsate 4s 2s infinite ease-in-out;
 ```
 
 **Сокращенная запись**
@@ -127,22 +161,30 @@ div {
 }
 ```
 
-**Подборки анимаций в интерфейсах**
+**Animate.css**
 
-http://motion-ui.tumblr.com/
-https://uimovement.com/
-http://ui-animations.tumblr.com/
+Мы можем пользоваться готовыми эффектами для анимации. Одна из них animate.css
 
+https://daneden.github.io/animate.css/
 
-**Примеры мобильных анимаций**
+Подключаем библиотеку и используем название анимации.
 
-http://thedesigninspiration.com/articles/20-incredible-mobile-ui-animations-in-gifs/
+Подключение
 
-https://dribbble.com/samuelcouto/buckets/75737-Cool-UI-animations
+```html
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+```
 
-https://dribbble.com/shots/1489493-Movie-app-Pull-down
+Пример применения к элементу
 
-https://dribbble.com/shots/1468679-Move-Product
+```html
+<div class="animated infinite bounce delay-2s">
+  Example
+</div>
+```
+
 
 
 **Полезное чтиво:**
@@ -173,11 +215,8 @@ https://vc.ru/design/46504-osnovnye-principy-ispolzovaniya-animacii-v-ux
 9. Пример анимации с эхо-волнами
 https://gist.github.com/AdonaiAraya/03a6a18c47bc4f2d9acf780e0c3f6b99
 
-10. Glitch-эффект
+10. Пример эффекта для стерео-очков
 https://ihatetomatoes.net/how-to-create-css-glitch-effect/
-
-11. Применение SASS в анимации
-https://hugogiraudel.com/2014/07/16/automating-css-animations-with-sass/
 
 
 
@@ -191,7 +230,7 @@ https://hugogiraudel.com/2014/07/16/automating-css-animations-with-sass/
 6.	Сделать анимации с градиентом http://www.niekdekker.com/
 7.	Сделать анимированный прогресс бар
 8.	Сделать так, чтобы progress bar добавлялся делениями
-9.	Спрайты
+
 
 
 

@@ -1,5 +1,9 @@
 # Наследие таблиц
 
+В HTML5 мы не должны использовать таблицы для чего-то отличного от табличных данных. Тем не менее мы можем добавлять в блоки табличные свойства, что является нормальной практикой. Всё это заставляет разобраться нас в том, как работают таблицы.
+
+Рассмотрим простейшую таблицу с одной строчкой и трема ячейками.
+
 ```html
 <table>
 <tr>
@@ -10,9 +14,11 @@
 </table>
 ```
 
+За таблицу в целом отвечает тег &lt;table&gt; . Далее мы строим таблицу по строкам. За строку или ряд отвечает тег tr (table row). Внутри рядка мы можем добавлять ячейки, тег td.
+
 **атрибуты rowspan, colspan**
 
-Допустим мы хотим сделать следующую таблицу
+Но иногда нам нужно сделать таблицу с более сложной структурой. Допустим мы хотим сделать следующую таблицу
 
 ![Таблица с объединенными рядками](pics/16_tables/colspan.gif)
 
@@ -40,6 +46,8 @@
 
 
 **border-collapse**
+
+По умолчанию границы ячеек и таблицы разделены, ячейки так же разделены, но мы можем это исправить с помощью свойства border-collapse.
 
 border-collapse:collapse  - объединение границ  ячеек и таблицы
 
@@ -72,27 +80,27 @@ display:table-cell;
 
 **Резиновые колонки с фиксированными полями**
 
-http://colintoh.com/blog/display-table-anti-hero
+1. http://colintoh.com/blog/display-table-anti-hero
 
-http://alistapart.com/article/holygrail
+2. http://alistapart.com/article/holygrail
 
-http://www.mattboldt.com/kicking-ass-with-display-table/
+3. http://www.mattboldt.com/kicking-ass-with-display-table/
 
-Проблемы с длинными словами в таблицах
+4. Проблемы с длинными словами в таблицах
 https://css-tricks.com/fixing-tables-long-strings/
 
 **Верстка писем**
 
-Основы верстки писем
+1. Основы верстки писем
 https://habrahabr.ru/post/180013/
 
-Проблемы с версткой писем
+2. Проблемы с версткой писем
 https://spark.ru/startup/yorb/blog/30074/html-pisma-kak-ne-popastsya-na-obeschaniya-i-bistro-proverit-verstalschika
 
-60 полезных ресурсов по емейл рассылкам
+3. 60 полезных ресурсов по емейл рассылкам
 https://habrahabr.ru/company/pechkin/blog/273677
 
-Примеры писем с оригинальным оформлением
+4. Примеры писем с оригинальным оформлением
 http://reallygoodemails.com/
 
 

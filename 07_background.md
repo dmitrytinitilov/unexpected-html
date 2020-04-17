@@ -75,12 +75,14 @@ https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-position
 background-attachment:fixed - оставляет фон на месте. То есть блок воспринимается как пространство, через которое мы видим фон.
 
 **background-clip** - определяет куда именно будет распространяться фоновый цвет - по границу, по padding или только по контенту.
-
+ 
 По умолчанию имеет значение border-box, то есть фон контента будет и под границами тоже
 
 padding-box - фон только по padding'у
 
 content-box - фон только по контенту
+
+Играясь с цветом границы(border) и padding'a(задается через фоновый цвет content'a) можно получить необычные результаты.
 
 **background-origin** - аналогичное свойство для фоновой картинки
 
@@ -97,9 +99,6 @@ background: color image position/size repeat origin clip attachment initial|inhe
 ```css
 background:red
 ```
-
-**Бесшовные фоны**
-http://subtlepatterns.com/
 
 **Множественные фоны**
 
@@ -122,7 +121,46 @@ http://subtlepatterns.com/
 }
 ```
 
-http://habrahabr.ru/company/microsoft/blog/137705/
+
+
+**background-clip:text**
+
+Свойство имеет три основных значения, и определяет как далеко будет распространяться фоновая картинка.
+
+```css
+background-clip: border-box;
+background-clip: padding-box;
+background-clip: content-box;
+```
+
+Только content, padding или же даже на уровень границы.               
+
+background-clip:text - единственное экспериментальное значение среди всех значений background-clip, которое еще не вошло в стандарт. Тем не менее, позволяет делать интересные эффекты, например текст, через который мы видим фон.
+
+```css
+.block {
+	width:500px;
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+	font-family: Arial;
+	font-size:40px;
+	font-weight:bold;
+	background-image:url(totem.jpg);
+	background-clip: text;
+	color:transparent;
+}
+```
+
+**Полезное чтиво:**
+
+1. Паттерны для бесшовных фонов http://subtlepatterns.com/
+2. Множественные фоны http://habrahabr.ru/company/microsoft/blog/137705/
+3. Создание интересных эффектов, с помощью https://tympanus.net/codrops/css_reference/background-clip/
+4. Как делать необычные эффекты с текстом
+https://css-tricks.com/how-to-do-knockout-text/
+
+
 
 **Практика:**
 

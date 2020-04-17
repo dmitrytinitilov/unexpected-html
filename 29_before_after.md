@@ -2,7 +2,10 @@
 
 Псевдо-атрибут ::before с помощью свойства content позволяет делать вставки перед контентом внутри блока.
 
-Чтобы стало понятнее рассмотрим пример
+Хак1: свойство content обязательно должно быть указано, пусть даже ввиде пустой строки.
+Хак2: before и after являются inline-новыми пока мы это не поменяем.
+
+Чтобы стало понятнее рассмотрим пример:
 
 ```css
 p.box {
@@ -33,31 +36,28 @@ http://tympanus.net/codrops/2012/01/11/css-buttons-with-pseudo-elements/
 
 3. Всплывающие подсказки на чистом CSS https://medium.freecodecamp.org/a-step-by-step-guide-to-making-pure-css-tooltips-3d5a3e237346 
 
-4. Различные применения before, after
-https://codemyviews.com/blog/the-lowdown-on-before-and-after-in-css
-
-5. Пример сайта со "скошенной" версткой с помощью before и after https://www.securitywithoutborders.org/
-
-6. Построение "перекошенной" верстки
+4. Построение "перекошенной" верстки
 https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/
 
-7. Еще один вариант перекошенной верстки
+5. Различные варианты перекошенной верстки
 https://tympanus.net/codrops/2011/12/21/slopy-elements-with-css3/
 
-8. Пример сайта с "клином"
+6. Пример сайта со "скошенной" версткой с помощью before и after https://www.securitywithoutborders.org/
+
+7. Пример сайта с "клином"
 https://codepen.io/kkhenriquez/pen/BpyMJL
 
-9. Много примеров со скошенными краями https://hackernoon.com/how-to-code-sloped-section-edges-719886601ffd
+8. Много примеров со скошенными краями https://hackernoon.com/how-to-code-sloped-section-edges-719886601ffd
 
-10. Еще про скошенные края https://medium.com/@colinlord/creating-angles-with-clip-path-and-transforms-865c516dd2ef
+9. Еще про скошенные края. Вариант через clip-path https://medium.com/@colinlord/creating-angles-with-clip-path-and-transforms-865c516dd2ef
 
-11. Много вариантов от CSS-tricks
+10. Много вариантов от CSS-tricks
 https://css-tricks.com/creating-non-rectangular-headers/
-
-12. Много различных примеров для заголовков и текста http://archie-goodwin.net/load/specializirovannye_blogi/webmaster/css_psevdo_ehlementy_before_i_after_na_praktike/24-1-0-407
 
 
 **Значение url()**
+
+В качестве контента мы можем вставить картинку, но серьезный минус, что мы не можем настраивать её размер.
 
 ```css
 .box:before {
@@ -65,7 +65,35 @@ https://css-tricks.com/creating-non-rectangular-headers/
 }
 ```
 
+Альтернативой этому является задание блоку before свойства display:inline-block, задание размеров и фоновой картинки.
+
+```css
+.box:before {
+   content:"";
+   display:inline-block;
+   width:100px;
+   height:100px;
+   background-image:url('image.jpg');
+}
+```
+
 **Значение attr()**
+
+С помощью, этого значения можно добавлять данные в верстку через аттрибуты с префиксом data, а CSS автоматом их будет отображать.
+
+```html
+<div data-name="Vasya"></div>
+<div data-name="Vova"></div>
+<div data-name="Petya"></div>
+```
+
+Теперь добавим css, чтобы именна из атрибута отображались внутри блока.
+
+```css
+div[data-name]:before { 
+	content: " " attr(data-name) "]"; 
+}
+```
 
 1. Подробнее об использовании attr в content'e  
 https://developer.mozilla.org/ru/docs/Web/CSS/attr
@@ -79,6 +107,8 @@ div[data-line]:after {
 ```
 
 **Счетчики counter()**
+
+Иногда нам нужно добиться автоматической нумерации элементов. Особенно, когда элементы динамически добавляются. Конечно можно решить эту задачу через JavaScript, но есть реализация через чистый css. Нам понадобится значение для контента counter
 
 Свойство **counter-reset** инициализирует счетчик. Это свойство как правило ставится в блок, который встречается один раз, например в body.
 

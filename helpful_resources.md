@@ -88,6 +88,13 @@ https://css-tricks.com/centering-css-complete-guide/
 Pre-loader на CSS
 https://webdesignviews.com/css-pre-loader/
 
+**Подборки анимаций в интерфейсах**
+
+http://motion-ui.tumblr.com/
+https://uimovement.com/
+http://ui-animations.tumblr.com/
+
+
 **Мануал по Markdown**
 https://commonmark.org/help/tutorial/index.html
 

@@ -123,7 +123,8 @@ http://babeltheking.com/eng
 
 http://www.redcentricplc.com/virtual-worlds/
 
-
+Примеры мобильных анимаций
+https://dribbble.com/samuelcouto/buckets/75737-Cool-UI-animations
 
 
 **Просто-дизайн**<BR>

@@ -8,13 +8,8 @@
 Здесь Вы найдете более 200 задач по верстке, которые познакомят Вас с разнообразными проблемами и особенностями html/css, включая верстку на flexbox, grid layout, svg, адаптивную верстку и анимации.
 
 
-Для вопросов по книге
-https://telegram.me/dmitrytinitilov
-
-[Skype: dmitry_tinitilov](skype:dmitry_tinitilov?call)
-
-Последняя отредактированная версия
-https://github.com/dmitrytinitilov/unexpected-html
+Сообщество книги в Telegram
+https://t.me/unexpected_html
 
 
 #Оглавление
@@ -47,15 +42,14 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [25. \# flexbox](25_flexbox.md)
 * [26. \#Grid'ы](26_grid_layout.md)
 * [27. Списки](27_lists.md)
-* [28. Необходимо больше CSS-селекторов](28_we_need_more_cssselectors.md)
-* [29. \# До и после: cелекторы :before :after](29_before_after.md)
+* [28. nth-of-type](28_nth_of_type.md)
+* [29. :before :after](29_before_after.md)
 * [30. Анимации](30_animations.md)
 * [31. \# Формы](31_forms.md)
 * [32. \# SVG](32_svg.md)
 * [33. \# Таблицы](33_tables_heritage.md)
 * [34. float и clearfix](34_float_and_clearfix.md)
-* [35 \# Frontend процесс](35_frontend_process.md)
-* [36 \# Семантика](36_semantics.md)
+* [35 \# Семантика](36_semantics.md)
 * [\# @supports](addition_supports.md)
 * [Дополнение по Sublime 3](addition_sublime_3.md)
 * [Emmet](emmet_cheatsheet.md)
@@ -63,9 +57,12 @@ https://github.com/dmitrytinitilov/unexpected-html
 * [Руководства по HTML](html_manuals.md)
 * [Codepens](codepens.md)
 * [Вдохновение](inspiration.md)
+* [Вопросы к экзамену](exam.md)
 * [Благодарности](gratitudes.md)
 * [Разное](other.md)
 * [\#TODO list](todo.md)
+
+
 
 
 

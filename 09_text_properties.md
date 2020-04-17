@@ -90,6 +90,11 @@ https://css-tricks.com/almanac/properties/h/hyphenate/
 
 **text-transform**
 
+none - значение по умолчанию
+capitalize - каждое слово начинается с большой буквы
+lowercase - приводим все буквы к нижнему регистру
+uppercase - приводим все буквы к верхнему регистру
+
 https://www.w3schools.com/cssref/pr_text_text-transform.asp
 
 **text-overflow**
