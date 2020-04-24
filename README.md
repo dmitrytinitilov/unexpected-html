@@ -11,6 +11,9 @@
 Сообщество книги в Telegram
 https://t.me/unexpected_html
 
+Последняя отредактированная версия книги
+https://github.com/dmitrytinitilov/unexpected-html
+
 
 #Оглавление
 
